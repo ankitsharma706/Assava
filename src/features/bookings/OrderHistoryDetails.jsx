@@ -57,7 +57,7 @@ const OrdDetails = styled.button`
   margin-bottom: 30px;
   height: 70px;
   text-align: center;
-  background: #ff9595;
+  background: #777575FF;
   display: flex;
   cursor: pointer;
   border: none;

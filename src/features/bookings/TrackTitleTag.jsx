@@ -10,7 +10,7 @@ const TrackTitleTags = styled.div`
   align-items: center;
   align-self: center;
   align-content: center;
-  background: #2cffa7;
+  background: #838383FF;
 `;
 const TrackTitleTagNavigation = styled.button`
   cursor: pointer;

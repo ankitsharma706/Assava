@@ -9,7 +9,7 @@ import OurPartner from "../features/home/OurPartner";
 const Box1 = styled.div`
   height: 850px;
   width: 100%;
-  background: #240f0f;
+  background: #9c9c9cff;
 `;
 
 function Home() {

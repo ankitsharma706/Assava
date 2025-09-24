@@ -4,7 +4,7 @@ import Summerry from "../carts/Summerry";
 const ShipingSummerry = styled.div`
   height: 500px;
   width: 100%;
-  background: #22e64d;
+  background: #636363FF;
   display: flex;
   justify-content: space-around;
 `;
@@ -12,13 +12,13 @@ const ShippingDetils = styled.div`
   height: 400px;
   width: 40%;
   margin-top: 50px;
-  background: #20aa9f;
+  background: #8A8A8AFF;
 `;
 const ShippingTitle = styled.div`
   height: 60px;
   margin-top: 10px;
   font-size: 43px;
-  background: #000;
+  background: #7a7a7a;
 
   padding-left: 30px;
 
@@ -30,7 +30,7 @@ const Addresses = styled.div`
   font-size: 38px;
   padding: 23px;
   padding-bottom: 5px;
-  background: #000;
+  background: #6e6e6e;
   width: 95%;
 `;
 const AddressesAdd = styled.div`

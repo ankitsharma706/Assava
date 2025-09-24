@@ -6,7 +6,7 @@ const StatTrack = styled.div`
   margin: 5px 20px 9px 16px;
   border-radius: 10px;
   padding: 10px;
-  background: #a05a21;
+  background: #707070FF;
 `;
 const DelStatus = styled.div`
   /* height: 60px; */

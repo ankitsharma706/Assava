@@ -5,7 +5,7 @@ const TransitionBox = styled.div`
   height: 150px;
   width: 100%;
   display: flex;
-  background: #dfec1d;
+  background: #6D6D6DFF;
   justify-content: center;
   padding-top: 30px;
 `;

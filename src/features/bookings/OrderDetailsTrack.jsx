@@ -4,7 +4,7 @@ import StatusTrack from "./StatusTrack";
 const OrderDetailandTrack = styled.div`
   height: 500px;
   width: 100%;
-  background: #6d22e6;
+  background: #9B9B9BFF;
   display: flex;
   justify-content: space-around;
 `;
@@ -12,7 +12,8 @@ const OrderDetails = styled.div`
   height: 400px;
   width: 40%;
   margin: 50px 0;
-  background: #aa6e20;
+  background: #a3a3a3ff;
+  border-radius: 14px solid #91fc05;
 `;
 const OrderName = styled.div`
   height: 60px;
@@ -44,13 +45,13 @@ const TrackingBox = styled.div`
   height: 430px;
   width: 40%;
   margin: 50px 0 0 50px;
-  background: #8e20aa;
+  background: #929292FF;
 `;
 const TrackingBoxStatus = styled.div`
   height: 270px;
   width: 93%;
   margin: 20px 0 0 30px;
-  background: #2167a0;
+  background: #707070FF;
   display: flex;
 `;
 const TrackStatCirs = styled.div`
@@ -72,7 +73,7 @@ const TracBoxStat = styled.div`
   height: 270px;
   width: 93%;
   /* margin: 20px 0 0 30px; */
-  background: #a02167;
+  background: #747474FF;
 `;
 const TrackDetailsName = styled.div`
   height: 60px;

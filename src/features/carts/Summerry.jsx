@@ -70,19 +70,19 @@ function Summerry() {
             <hr />
             <Box1>
               <Name>Coupon code</Name>
-              <Price>₹200</Price>
+              <Price>₹202</Price>
             </Box1>
             <Box1>
               <Name>Delivery</Name>
-              <Price>₹50</Price>
+              <Price>₹49</Price>
             </Box1>
             <Box1>
               <Name>packing</Name>
-              <Price>₹10</Price>
+              <Price>₹9</Price>
             </Box1>
             <Box1>
               <Name>Sub Total</Name>
-              <Price>₹860</Price>
+              <Price>₹840</Price>
             </Box1>
           </Summerary>
   )
