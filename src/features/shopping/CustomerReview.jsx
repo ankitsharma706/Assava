@@ -3,7 +3,7 @@ import styled from "styled-components";
 const FrequantlyOtherBox = styled.div`
   height: 600px;
   width: 100%;
-  background: #11bb1a;
+  background: #808080;
 `;
 const FreqTitle = styled.div`
   height: 90px;
@@ -20,11 +20,11 @@ const FreqTitle = styled.div`
 function CustomerReview() {
   return (
     <FrequantlyOtherBox>
-    <FreqTitle>
-      <span>Customer Review</span>
-    </FreqTitle>
-  </FrequantlyOtherBox>
-  )
+      <FreqTitle>
+        <span>Customer Review</span>
+      </FreqTitle>
+    </FrequantlyOtherBox>
+  );
 }
 
-export default CustomerReview
+export default CustomerReview;
