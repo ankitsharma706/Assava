@@ -3,7 +3,7 @@ import styled from "styled-components";
 const FrequantlyOtherBox = styled.div`
   height: 600px;
   width: 100%;
-  background: #11bb1a;
+  background: #8a8a8a;
 `;
 const FreqTitle = styled.div`
   height: 90px;
