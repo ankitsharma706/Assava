@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+   background: linear-gradient(
+  to right,
+  #4a2e05,
+  #bc8c2a,
+  #4a2e05
+);
+  color: #000000;
+}
+/* Hide scrollbar for Chrome, Safari */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+/* Hide scrollbar for Firefox */
+html {
+  scrollbar-width: none;
+}
