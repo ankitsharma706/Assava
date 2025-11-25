@@ -1,18 +1,33 @@
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
-/* ADDRESS CONTAINER */
+/* OUTER WRAPPER → aligns box to right center */
+const AddressContainer = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  width: 100%;
+  padding-right: 2rem;
+
+  @media (max-width: 700px) {
+    justify-content: center;
+    padding-right: 0;
+  }
+`;
+
+/* ADDRESS BOX */
 const AddressWrapper = styled.div`
-  ${'' /* background: #757474; */}
-   background: linear-gradient(
-  to right,
-  #4a2e05,
-  #bc8c2a,
-  #4a2e05
-);
+  background: linear-gradient(
+    to right,
+    #4a2e05,
+    #bc8c2a,
+    #4a2e05
+  );
   padding: 1rem;
   border-radius: 8px;
-
   color: white;
+
   font-size: clamp(1rem, 2vw, 1.3rem);
 
   display: flex;
@@ -20,8 +35,8 @@ const AddressWrapper = styled.div`
   justify-content: space-between;
   gap: 1rem;
 
-  width: 100%;
   max-width: 420px;
+  width: 100%;
 
   @media (max-width: 700px) {
     flex-direction: column;
@@ -30,18 +45,15 @@ const AddressWrapper = styled.div`
   }
 `;
 
-/* TEXT BOX */
 const AddressText = styled.div`
   line-height: 1.4;
   font-weight: 400;
 `;
 
-/* DROPDOWN BUTTON */
-const AddressToggleButton = styled.button`
+const AddressToggleButton = styled(NavLink)`
   background: none;
   border: none;
   color: white;
-
   font-size: clamp(1.2rem, 3vw, 1.6rem);
   cursor: pointer;
 
@@ -55,14 +67,16 @@ const AddressToggleButton = styled.button`
 
 function Address() {
   return (
-    <AddressWrapper>
-      <AddressText>
-        <strong>Your Address:</strong> 751030 — Ankit Sharma, ITER College, SOA
-        University. Delivery expected by <strong>Day After Tomorrow</strong>.
-      </AddressText>
+    <AddressContainer>
+      <AddressWrapper>
+        <AddressText>
+          <strong>Your Address:</strong> 751030 — Ankit Sharma, ITER College, SOA
+          University. Delivery expected by <strong>Day After Tomorrow</strong>.
+        </AddressText>
 
-      <AddressToggleButton>▼</AddressToggleButton>
-    </AddressWrapper>
+        <AddressToggleButton to="/account">▼</AddressToggleButton>
+      </AddressWrapper>
+    </AddressContainer>
   );
 }
 

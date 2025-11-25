@@ -1,9 +1,11 @@
-import styled from "styled-components";
+import { useState } from "react";
 import { AiOutlineStop } from "react-icons/ai";
 import { FaHandsHoldingCircle } from "react-icons/fa6";
 import { GiCoffeeBeans } from "react-icons/gi";
 import { SiCoffeescript } from "react-icons/si";
 import { SlLocationPin } from "react-icons/sl";
+import { NavLink } from "react-router-dom";
+import styled from "styled-components";
 
 /* MAIN BOX */
 const Wrapper = styled.div`
@@ -149,8 +151,20 @@ const AddButton = styled.button`
   font-size: clamp(1rem, 2vw, 1.3rem);
   cursor: pointer;
 `;
+const AddButtonLink = styled(NavLink)`
+  ${'' /* border: none;
+  background: none;
+  color: white;
+  font-weight: bold;
+
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  cursor: pointer; */}
+`;
 
 function CofInfo() {
+  const [count, setCount] = useState(1);
+  function increment() { setCount(p => p + 1) }
+  function decrement() { setCount(p => (p > 1 ? p - 1 : 1)) }
   return (
     <Wrapper>
       <Title>Durga Madhaba</Title>
@@ -186,16 +200,16 @@ function CofInfo() {
       <QtyWrapper>
         Quantity:
         <QtyBox>
-          <QtyButton>-</QtyButton>
-          <span>2</span>
-          <QtyButton>+</QtyButton>
+          <QtyButton onClick={decrement}>-</QtyButton>
+          <span>{count}</span>
+          <QtyButton onClick={increment}>+</QtyButton>
         </QtyBox>
       </QtyWrapper>
 
       <PriceBox>
         <Price>₹799</Price>
         <OldPrice>₹1499</OldPrice>
-        <AddButton>Add to Cart</AddButton>
+        <AddButton ><AddButtonLink to="/cart">Add to Cart</AddButtonLink></AddButton>
       </PriceBox>
     </Wrapper>
   );

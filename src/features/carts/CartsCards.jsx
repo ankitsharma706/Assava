@@ -1,3 +1,4 @@
+import { useState } from "react";
 import styled from "styled-components";
 
 /* MAIN CART WRAPPER */
@@ -145,6 +146,9 @@ const OldPrice = styled.div`
 `;
 
 function CartsCards() {
+  const [count, setCount] = useState(1);
+    function increment() { setCount(p => p + 1) }
+    function decrement() { setCount(p => (p > 1 ? p - 1 : 1)) }
   return (
     <CartWrapper>
       <ImageBox>
@@ -167,9 +171,9 @@ function CartsCards() {
         <BottomRow>
           {/* QUANTITY */}
           <QtyBox>
-            <button>-</button>
-            <span>2</span>
-            <button>+</button>
+            <button onClick={decrement}>-</button>
+            <span>{count}</span>
+            <button onClick={increment}>+</button>
           </QtyBox>
 
           {/* PRICE */}
