@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 /* WRAPPER */
@@ -28,7 +29,7 @@ const Discount = styled.div`
 `;
 
 /* ADD BUTTON */
-const AddButton = styled.button`
+const AddButton = styled(NavLink)`
   margin-left: auto;
   padding: 0.4rem 0.8rem;
 
@@ -51,7 +52,7 @@ function AddToCart() {
     <AddToCartBox>
       <Price>₹799</Price>
       <Discount>₹1499</Discount>
-      <AddButton>Add to Cart</AddButton>
+      <AddButton to="/cart">Add to Cart</AddButton>
     </AddToCartBox>
   );
 }
